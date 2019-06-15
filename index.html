@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SMB2 Player Creator</title>
+		<meta name="description" content="" />
+	<meta name="keywords" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
+	</head>
+	<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+          	<div class="">
+    	      	<a class="navbar-brand" href="index.html">
+                <!-- index.htm goes here -->
+    	      	</a>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="#">SMB2 Player Creator </a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="padding-bot-50"></div>
+
+
+<div class="container">
+    <div class="form-group">
+        <form id="create-form">
+            <table id="example1">
+                <thead>
+                    <tr>
+                        <td colspan=9>
+                            <a href="#" class="btn btn-md btn-primary" id="generateNewPlayer">Generate Single Player</a>
+                            <a href="#" class="btn btn-md btn-success" id="addPlayerToList">Add</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=9>
+                            <a href="#" onclick="javascript:toggleManyPlayers()" class="btn btn-md btn-danger" id="toggleManyPlayers">Generate Player MANY players and ADD</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td width="200">
+                            <label for="name">Name</label>
+                            <input class="form-control" type="text" id="name" name="name" placeholder="name"></input>
+                        </td>
+                        <td width="150">
+                            <label for="arsenal">Arsenal</label>
+                            <input class="form-control" type="text" id="arsenal" name="arsenal" placeholder="arsenal"></input>
+                        </td>
+                        <td>
+                            <label for="position">Pos</label>
+                            <input class="form-control" type="text" id="position" name="position" placeholder="pos"></input>
+                        </td>
+                        <td>
+                            <label for="secPos">Sec</label>
+                            <input class="form-control" type="text" id="secPos" name="secPos" placeholder="sec"></input>
+                        </td>
+                        <td>
+                            <label for="power">Pow</label>
+                    		<input class="form-control" type="text" id="power" name="power" placeholder="pow"></input>
+                        </td>
+                        <td>
+                            <label for="contact">Con</label>
+                    		<input class="form-control" type="text" id="contact" name="contact" placeholder="con"></input>
+                        </td>
+                         <td>
+                            <label for="speed">Spd</label>
+                    		<input class="form-control" type="text" id="speed" name="speed" placeholder="spd"></input>
+                        </td>
+                        <td>
+                            <label for="fielding">Fld</label>
+                    		<input class="form-control" type="text" id="fielding" name="fielding" placeholder="fld"></input>
+                        </td>
+                        <td>
+                            <label for="arm">Arm</label>
+                    		<input class="form-control" type="text" id="arm" name="arm" placeholder="arm"></input>
+                        </td>
+                        <td>
+                            <label for="velocity">Vel</label>
+                    		<input class="form-control" type="text" id="velocity" name="velocity" placeholder="vel"></input>
+                        </td>
+                        <td>
+                            <label for="junk">Jnk</label>
+                    		<input class="form-control" type="text" id="junk" name="junk" placeholder="jnk"></input>
+                        </td>
+                        <td>
+                            <label for="accuracy">Acc</label>
+                    		<input class="form-control" type="text" id="accuracy" name="accuracy" placeholder="acc"></input>
+                        </td>
+                        <td>
+                            <label for="bat">Bat</label>
+                    		<input class="form-control" type="text" id="bat" name="bat" placeholder="bat"></input>
+                        </td>
+                        <td>
+                            <label for="throw">Thr</label>
+                    		<input class="form-control" type="text" id="throw" name="throw" placeholder="thr"></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Arsenal</th>
+                        <th>Pos</th>
+                        <th>Sec</th>
+                        <th>Pow</th>
+                        <th>Con</th>
+                        <th>Spd</th>
+                        <th>Fld</th>
+                        <th>Arm</th>
+                        <th>Vel</th>
+                        <th>Jnk</th>
+                        <th>Acc</th>
+                        <th>Bat</th>
+                        <th>Thr</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </form>
+        <!--<button value="Export as CSV 2" onclick="$('#example1').table2CSV({header:['id','name', 'arsenal', pos', 'secpos', power','contact','speed','fielding','arm','velocity','junk','accuracy', 'bat', 'throw', 'total', 'delete']})">Convert to CSV</button>-->
+        <button class="btn btn-primary" id="button2">Export HTML table to CSV file</button>
+    </div>
+</div>
+
+<div class="padding-bot-50"></div>
+
+<div class="the-footer padding-bot-50">
+	<div class="container">
+		<h3>SMB2 Player Creator</h3>
+	</div>
+</div>
+
+<div class="the-last-footer"></div>
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Genaric Scripts -->
+        <script type="text/javascript" src="public/scripts/script.js"></script>
+        <script type="text/javascript" src="public/scripts/html2csv2.js"></script>
+        <script type="text/javascript" src="public/scripts/random_name.js"></script>
+
+    </body>
+</html>

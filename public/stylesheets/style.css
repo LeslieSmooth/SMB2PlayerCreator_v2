@@ -1,0 +1,259 @@
+html {
+  overflow-y: scroll;
+  max-height:1000000px;
+}
+
+body {
+  background-color: #E7E7E7;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: blue;
+}
+a:hover {
+  color: black;
+}
+hr {
+  border-top: 2px solid rgba(0,42,90,0.9);
+}
+
+.navbar {
+  margin-bottom: 0px;
+  border: none;
+  border-radius: 0px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.logo-rounded {
+  border-radius: 5px;
+}
+
+
+.logo-div {
+  margin: 0 auto 0 auto;
+  object-fit: cover;
+  max-width: 400px;
+  max-height: 250px;
+}
+
+.jumbotron {
+  margin: 30px 0 30px 0;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.jumbotron p {
+  display: block;
+  text-align: center;
+}
+
+.main {
+	width: 70%;
+}
+
+.cover {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.cover img {
+  margin: 0 auto;
+  object-fit: cover;
+  width:100%;
+  height:200px;
+}
+
+.quote-div-section {
+  border-radius: 1em;
+  background-color: #FFFFFF;
+  margin: 1em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
+}
+
+input[type=checkbox], input[type=radio] {
+  margin-right: 1em;
+}
+
+.contact-card {
+	border-radius: 1em;
+  background-color: #f8f8f8;
+  margin: 1em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
+}
+
+.img-blog {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.terr-offset {
+  margin-top: 2em;
+}
+
+.debug {
+	background-color: #ff0000;
+}
+
+.swp-img img {
+	margin: 0 auto;
+	object-fit: cover;
+	width:100%;
+	height:400px;
+}
+
+.swp-img p {
+	background-color: #00ff00;
+	margin: auto auto;
+	text-align: center;
+}
+
+.swp-img .hover-text {
+	position:relative;
+	bottom:30px;
+	left:0px;
+	visibility:hidden;
+}
+
+.swp-img {
+	margin: 5px 5px;
+}
+
+.the-footer {
+	background-color: rgba(0,42,90,0.9);
+	color: #bbbbbb;
+}
+
+p.name-of-person {
+	text-decoration: underline;
+}
+
+p {
+	margin: 0px 0px;
+}
+
+.the-footer a {
+	color: white;
+}
+
+#mailing {
+	color: white;
+}
+
+.footer-cell {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.partners {
+	background-color: #CC998D;
+	padding: 100px;
+	margin: 50px 0px;
+}
+.partners h1 {
+	text-align: center;
+}
+
+.news p {
+  margin-bottom: 12px;
+}
+
+.margin-bot-50{
+	margin-bottom: 50px;
+}
+
+.padding-bot-50 {
+	padding-bottom: 50px;
+}
+
+.padding-bot-10 {
+	padding-bottom: 10px;
+}
+
+.partnerblock {
+	height: 120px;
+}
+
+.partnerblock img {
+	display: inline-block;
+	margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    vertical-align: middle;
+}
+
+.partnerblock p {
+	text-align:center;
+	line-height:120px;
+}
+
+.the-last-footer{
+	height: 100px;
+}
+
+.invisible {
+  visibility:hidden;
+}
+
+.product-service {
+  margin-top: 15px;
+  list-style-image: url("img/arrow-right.png");
+}
+
+.list-items {
+  margin-bottom: 3px;
+  list-style: auto;
+}
+.list-items:hover {
+  cursor: auto;
+  text-decoration: none;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus {
+  color: black;
+  background-color: #F8F8F8;
+}
+
+.del-toggle-off {
+  display: none;
+}
+
+.del-toggle-on {
+  display: inline;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 360px;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px 10px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
